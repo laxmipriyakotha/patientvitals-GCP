@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Keys / secrets
+*.json
+*key*.json
+*credentials*.json
+
+# Beam / Dataflow artifacts
+*.log
+job.json
