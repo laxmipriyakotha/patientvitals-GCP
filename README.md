@@ -39,7 +39,8 @@ A real-time healthcare streaming demo that simulates patient vitals, publishes e
 ## Architecture
 Pub/Sub (Topic) → Pub/Sub (Subscription) → Dataflow (Apache Beam streaming) → BigQuery (healthcare.patient_risk_analytics) → Power BI
 
-------------------------------------------------------------------------
+<img width="2089" height="732" alt="patient_vitals_architecture" src="https://github.com/user-attachments/assets/7182ca5f-602f-413f-a0a6-c4fc34254dfd" />
+
 ## Dataset (Synthetic)
 Each event contains:
 - event_ts (UTC ISO timestamp)
@@ -146,7 +147,7 @@ Data quality metrics + alerts
 
 
 
-<img width="2089" height="732" alt="patient_vitals_architecture" src="https://github.com/user-attachments/assets/7182ca5f-602f-413f-a0a6-c4fc34254dfd" />
+
 
 
 Bronze: raw JSON table
