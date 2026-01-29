@@ -1,36 +1,4 @@
-patientvitalsproject/
-├── README.md
-├── architecture/
-│   └── architecture.mmd
-├── simulator/
-│   ├── patient_vitals_simulator.py
-│   ├── requirements.txt
-│   └── .env.example
-├── dataflow/
-│   ├── streaming_pipeline.py
-│   ├── requirements.txt
-│   └── .env.example
-└── sql/
-    ├── create_dataset.sql
-    └── sample_queries.sql
 
-Commands to reorganize (Cloud Shell)
-cd ~/patientvitalsproject
-
-mkdir -p architecture simulator dataflow sql
-
-# Move/rename simulator
-mv simulator1/patient_vitals.py simulator/patient_vitals_simulator.py
-
-# Move/rename pipeline
-mv dataflow/streamingpipeline.py dataflow/streaming_pipeline.py
-
-# (Optional) remove empty old folder
-rmdir simulator1 2>/dev/null || true
-
-2) README.md (copy/paste template)
-
-Create this file at: ~/patientvitalsproject/README.md
 
 # Patient Vitals Streaming Pipeline (GCP) — Pub/Sub → Dataflow → BigQuery → Power BI
 
